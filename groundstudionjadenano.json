@@ -1,0 +1,36 @@
+{
+  "build": {
+    "core": "arduino",
+    "extra_flags": "-DARDUINO_AVR_NANO",
+    "f_cpu": "16000000L",
+    "mcu": "atmega328p",
+    "variant": "eightanaloginputs"
+  },
+  "bootloader": {
+    "efuse": "0xF4",
+    "file": "optiboot/optiboot_atmega328pb_16mhz.hex",
+    "hfuse": "0xDE",
+    "lock_bits": "0xCF",
+    "lfuse": "0xFF",
+    "unlock_bits": "0xFF"
+  },
+  "debug": {
+    "simavr_target": "atmega328p",
+    "avr-stub": {
+      "speed": 115200
+    }
+  },
+  "frameworks": [
+    "arduino"
+  ],
+  "name": "Groundstudio Jade Nano",
+  "upload": {
+    "maximum_ram_size": 2048,
+    "maximum_size": 32256,
+    "protocol": "arduino",
+    "require_upload_port": true,
+    "speed": 115200
+  },
+  "url": "https://ardushop.ro/ro/electronica/2500-jade-nano-plus.html",
+  "vendor": "Groundstudio"
+}
